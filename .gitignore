@@ -58,3 +58,6 @@ MYMETA.json
 blib/
 Build
 sandbox
+.ssh/
+.chef/
+git-wata

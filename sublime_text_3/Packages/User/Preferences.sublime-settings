@@ -1,0 +1,193 @@
+{
+  	/*
+	 * UI関係
+	 */
+
+	// カラー&スキーマ
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme", // カラー
+	"theme": "Soda Dark.sublime-theme", // スキーマ
+	// カーソルのスタイル ("smooth", "phase", "blink", "wide", "solid")
+	"caret_style": "smooth",
+
+	// フォント
+	"font_size":	 11,			// フォントサイズ
+	"font_face": 	"Monaco",		// 使用フォント
+
+	// フォントのオプション-配列で指定可-太字・斜体を使わない、アンチエイリアスをかけない、など
+	// Valid options are "no_bold", "no_italic", "no_antialias", "gray_antialias",
+	// "subpixel_antialias", "no_round" (OS X only) and "directwrite" (Windows only)
+	"font_options": ["no_itaric"],	// ここでは斜体を使用しないのみ
+
+	"line_padding_top": 	0,		// 行の上側の余白
+	"line_padding_bottom":	0,		// 行の下側の余白
+	"scroll_past_end": 		true,	// ファイル最終行を越えたスクロール
+
+	// タブ&インデント
+	"tab_size": 					4,		// タブサイズ
+	"translate_tabs_to_spaces":		false,	// タブ->スペースに置き換えの有効
+
+	"detect_indentation": 			true,	// インデントを有効
+	"auto_indent": 					true,	// オートインデント
+	"smart_indent": 				true,	// スマートインデント
+	"indent_to_bracket": 			false,	// 括弧をインデント
+	"trim_automatic_white_space": 	true,	// オートインデントによる空行のインデントを自動削除
+	"draw_indent_guides": 			true,	// インデントの補助線の描画
+
+	// 文字の折り返し
+	"word_wrap":				true,	// 折り返し設定(autoだとテキストファイルのみ折り返し)
+	"wrap_width":				120,	// 折り返し幅数
+	"indent_subsequent_lines": 	true,	// 折り返し後の文頭位置?
+
+	// 括弧の補完・強調
+	"auto_match_enabled": 		true,	// 閉じ括弧などを補完する
+	"match_brackets": 			true,	// 対応する括弧にアンダーラインを引く
+	"match_brackets_content": 	true,	// 括弧内での括弧の強調
+	"match_brackets_square": 	true,	// 対応する四角括弧[]の強調
+	"match_brackets_braces": 	true,	// 対応する波括弧{}の強調
+	"match_brackets_angle": 	true,	// 対応する山括弧<>の強調
+	"match_tags": 				true,	// 対応する開始タグと終了タグの強調
+
+	"match_selection":	true,		// 同じ単語の強調
+	"highlight_line":	true,		// 現在行を強調
+
+	"draw_white_space": "",			// 不可視文字の表示
+
+
+	/*
+	 * sublime text 2 固有機能関係
+	 */
+
+	// スクロール
+	"scroll_speed": 	1.0,		// スクロールの速度-0にするとスムーズスクロールが無効
+
+	// 表示関係
+	"line_numbers": true,			// 行番号の表示
+	"gutter": 		true,			// 行番号~エディタ間のスペースの有効の有無
+	"margin": 		0,				// 行番号~エディタ間のスペースの距離指定
+	"rulers": 		[80, 100, 118],	// ルーラーの設定(指定幅での線の表示)-数値を配列指定
+
+	// 折りたたみ機能
+	"fold_buttons": 		true,		// 折りたたみボタンの表示
+	"fade_fold_buttons":	true,  		// 折りたたみボタンを隠すかの設定
+
+	// 起動設定
+	"hot_exit":					false,	// アプリケーションの終了時に保存確認のダイアログなどを出さずにすぐにアプリケーションを終了
+	"remember_open_files":		true,	// 開いていたファイルを記憶
+	"close_windows_when_empty":	false,	// ウィンドウのタブが無くなったらウインドウを閉じる
+	"show_full_path": 			true,	// タイトルバーにファイルのフルパスを表示
+	"preview_on_click": 		true,	// サイドバーのファイルをクリックした際にタブを作らずに内容を表示
+
+	// ビルド設定
+	"show_panel_on_build":		true,	// ビルド時にビルド結果のパネルを表示
+
+
+	// ファイルの読み込み設定
+	"folder_exclude_patterns": 	[],		// サイドバーから除外するフォルダの設定-配列で指定
+	"file_exclude_patterns": 	[],		// サイドバーから除外するファイルの設定-配列で指定
+	"binary_file_patterns": 			// バイナリファイルの指定
+		[
+			"*.jpg",
+			"*.jpeg",
+			"*.png",
+			"*.gif",
+			"*.ttf",
+			"*.tga",
+			"*.dds",
+			"*.ico",
+			"*.eot",
+			"*.pdf",
+			"*.swf",
+			"*.jar",
+			"*.zip"
+		],
+
+	// パッケージ設定
+	"ignored_packages":		// 無視するパッケージを指定
+		[
+//			"Vintage"		// 無視することでSublime Text をVimライクに
+		],
+
+
+	/*
+	 * エディタ設定
+	 */
+
+	// 保存関係
+	"save_on_focus_lost": false, // 別のタブやウィンドウにフォーカスが移ると自動で保存
+
+	// エンコード関係
+	"default_encoding": 	"UTF-8", 					// デフォルトエンコーディング
+//	"fallback_encoding": 	"Western (Windows 1252)", 	// 文字コードを特定できないときに自動的に指定する文字コード
+	// Valid values are 'system' (whatever the OS uses), 'windows' (CRLF), 'unix' (LF only).
+	"default_line_ending": 	"system", 					// デフォルトの改行コード
+
+	// 自動削除機能
+	"trim_trailing_white_space_on_save":	false, 	// 保存時に行末の空白を削除する
+	"ensure_newline_at_eof_on_save":		false, 	// ファイルの最終行が改行で終わるのを確実にする?
+
+	// 入力補完機能
+	"spell_check": 					false,		// スペルチェック(エラーだらけになるので無効に)
+	"auto_complete": 				true,		// オートコンプリート
+	"auto_complete_size_limit": 	4194304,	// オートコンプリートが自動で表示されるファイルの最大サイズ
+	"auto_complete_delay": 			50,			// 補完候補表示の遅延
+	"auto_complete_commit_on_tab": 	true,		// 補完候補の選択にタブキーのみを用いる
+
+	"auto_complete_selector": 	"",				// オートコンプリートの有効な場所の指定
+	"auto_complete_triggers": 	[{				// オートコンプリートのより詳細なシチュエーション
+									"selector": "text.html",
+		 							"characters": "&lt;"
+		 						}],
+
+	"auto_complete_with_fields":	 false,		// スニペットフィールド上でもオートコンプリートを有効
+
+	/*
+	 * プロジェクト管理
+	 */
+
+	// プロジェクトツリー
+	"tree_animation_enabled":	true,	// フォルダツリーのアニメーション
+	"highlight_modified_tabs":	true,	// 変更されたタブをさらに強調
+	"show_tab_close_buttons": 	true,	// タブを閉じるボタンの表示
+	"bold_folder_labels": 		true,	// サイドバーのフォルダ名を太字に
+
+
+	/*
+	 * 入力&キーバインド
+	 */
+
+	// カーソル移動
+	"move_to_limit_on_up_down":	true, 	// ファイル先頭行で上キーを押すとファイル先頭行の行頭にカーソルが移動します
+
+	// 入力関係
+	"shift_tab_unindent":	true,	// Shit+Tabでインデントを減らす
+	"use_tab_stops": 		true,	// タブ->スペースをDelteでタブ分のspaceを削除
+
+
+	// 検索機能
+	"find_selected_text": 	true,	// 選択している文字を自動で検索語に指定
+	"drag_text": 			true,	// 選択しているテキストをドラッグアンドドロップできるように
+
+
+	/*
+	 * プラグイン設定
+	 */
+
+	// sublimelinter
+	"sublimelinter_executable_map":
+		{
+		},
+
+
+	/*
+	 * その他
+	 */
+
+	// Mac固有
+	"use_simple_full_screen":	true,	// OS X 用の設定。Lionスタイルのフルスクリーンモードを無効にする。
+	"open_files_in_new_window": false,	// ファイルを開く際に新しいウィンドウで開く。OS Xのみの機能
+	"create_window_at_startup": true,	// アプリケーション起動時に必ずウィンドウを作るようにする。OS Xのみの機能
+
+	"dictionary": "Packages/Language - English/en_US.dic",	// 辞書の指定
+	"draw_minimap_border": false							// ミニマップの縁を描画?
+
+}

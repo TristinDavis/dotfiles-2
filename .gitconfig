@@ -1,13 +1,13 @@
 [user]
-    name = wata
-    email = nagasawa@junkapp.com
+	name = wata
+	email = w.nagasawa@gmail.com
 [color]
     ui = auto 
 [core]
     whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
     excludesfile = /Users/wata/.gitignore
-    excludesfile = /Users/wnagasawa/.gitignore
-    autocrlf = input
+    autocrlf = false
+    sparsecheckout = true
 [alias]
     st = status
     s = status
@@ -21,17 +21,20 @@
     d=diff --stat
     pr = pull --rebase
     tree = log --graph --pretty=oneline --abbrev-commit --decorate
-[rerere]
-    enabled = true
 [difftool "sourcetree"]
-    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-    path = 
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
 [mergetool "sourcetree"]
-    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-    trustExitCode = true
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
 [push]
     default = upstream
 [diff]
     ignoreSubmodules = all
 [diff "zip"]
     textconv = unzip -c -a
+[ph]
+	user = wata
+	token = d766a6e30d3df70ea1864e9b013be5ce5d864eed
+[rerere]
+enabled = true
